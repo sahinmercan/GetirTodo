@@ -76,6 +76,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA25715D27B64126006EF04D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F72669382590B8DE00AB3034 /* AppDelegate.swift */,
+				F726693A2590B8DE00AB3034 /* SceneDelegate.swift */,
+				F72669412590B8DF00AB3034 /* Assets.xcassets */,
+				F72669462590B8DF00AB3034 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F726692C2590B8DD00AB3034 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +110,10 @@
 		F72669372590B8DE00AB3034 /* GetirTodo */ = {
 			isa = PBXGroup;
 			children = (
-				F72669382590B8DE00AB3034 /* AppDelegate.swift */,
-				F726693A2590B8DE00AB3034 /* SceneDelegate.swift */,
 				F726693C2590B8DE00AB3034 /* ViewController.swift */,
 				F726693E2590B8DE00AB3034 /* Main.storyboard */,
-				F72669412590B8DF00AB3034 /* Assets.xcassets */,
 				F72669432590B8DF00AB3034 /* LaunchScreen.storyboard */,
-				F72669462590B8DF00AB3034 /* Info.plist */,
+				DA25715D27B64126006EF04D /* Resources */,
 			);
 			path = GetirTodo;
 			sourceTree = "<group>";
@@ -437,12 +445,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GetirTodo/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9CPF837D8C;
+				INFOPLIST_FILE = GetirTodo/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getir.GetirTodo;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahin.GetirTodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,12 +467,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GetirTodo/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9CPF837D8C;
+				INFOPLIST_FILE = GetirTodo/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getir.GetirTodo;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahin.GetirTodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
