@@ -12,6 +12,11 @@
 		DA25716827B64705006EF04D /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25716727B64705006EF04D /* RealmObject.swift */; };
 		DA25716C27B64B9E006EF04D /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25716A27B64B9E006EF04D /* JobTableViewCell.swift */; };
 		DA25716D27B64B9E006EF04D /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA25716B27B64B9E006EF04D /* JobTableViewCell.xib */; };
+		DA25717027B64F57006EF04D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA25716F27B64F57006EF04D /* Detail.storyboard */; };
+		DA25717227B64F62006EF04D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25717127B64F62006EF04D /* DetailViewController.swift */; };
+		DA25717527B64F8B006EF04D /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25717327B64F8B006EF04D /* DetailTableViewCell.swift */; };
+		DA25717627B64F8B006EF04D /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA25717427B64F8B006EF04D /* DetailTableViewCell.xib */; };
+		DA25717927B656F4006EF04D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25717827B656F4006EF04D /* UIView+Extensions.swift */; };
 		F72669392590B8DE00AB3034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72669382590B8DE00AB3034 /* AppDelegate.swift */; };
 		F726693B2590B8DE00AB3034 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F726693A2590B8DE00AB3034 /* SceneDelegate.swift */; };
 		F72669402590B8DE00AB3034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F726693E2590B8DE00AB3034 /* Main.storyboard */; };
@@ -44,6 +49,11 @@
 		DA25716727B64705006EF04D /* RealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObject.swift; sourceTree = "<group>"; };
 		DA25716A27B64B9E006EF04D /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
 		DA25716B27B64B9E006EF04D /* JobTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
+		DA25716F27B64F57006EF04D /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		DA25717127B64F62006EF04D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DA25717327B64F8B006EF04D /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		DA25717427B64F8B006EF04D /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		DA25717827B656F4006EF04D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F72669352590B8DD00AB3034 /* GetirTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetirTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72669382590B8DE00AB3034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F726693A2590B8DE00AB3034 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +120,7 @@
 			children = (
 				DA25716527B646E5006EF04D /* RealmHelper.swift */,
 				DA25716727B64705006EF04D /* RealmObject.swift */,
+				DA25717827B656F4006EF04D /* UIView+Extensions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -119,6 +130,25 @@
 			children = (
 				DA25716A27B64B9E006EF04D /* JobTableViewCell.swift */,
 				DA25716B27B64B9E006EF04D /* JobTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		DA25716E27B64F43006EF04D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DA25716F27B64F57006EF04D /* Detail.storyboard */,
+				DA25717127B64F62006EF04D /* DetailViewController.swift */,
+				DA25717727B64F8F006EF04D /* TableViewCell */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DA25717727B64F8F006EF04D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DA25717327B64F8B006EF04D /* DetailTableViewCell.swift */,
+				DA25717427B64F8B006EF04D /* DetailTableViewCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -147,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				DA25716127B6449C006EF04D /* Main */,
+				DA25716E27B64F43006EF04D /* Detail */,
 				F72669432590B8DF00AB3034 /* LaunchScreen.storyboard */,
 				DA25716427B646D8006EF04D /* Helper */,
 				DA25715D27B64126006EF04D /* Resources */,
@@ -278,6 +309,8 @@
 				F72669452590B8DF00AB3034 /* LaunchScreen.storyboard in Resources */,
 				F72669422590B8DF00AB3034 /* Assets.xcassets in Resources */,
 				F72669402590B8DE00AB3034 /* Main.storyboard in Resources */,
+				DA25717027B64F57006EF04D /* Detail.storyboard in Resources */,
+				DA25717627B64F8B006EF04D /* DetailTableViewCell.xib in Resources */,
 				DA25716D27B64B9E006EF04D /* JobTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,10 +338,13 @@
 			files = (
 				DA25716327B644AE006EF04D /* MainViewController.swift in Sources */,
 				DA25716627B646E5006EF04D /* RealmHelper.swift in Sources */,
+				DA25717527B64F8B006EF04D /* DetailTableViewCell.swift in Sources */,
+				DA25717927B656F4006EF04D /* UIView+Extensions.swift in Sources */,
 				F72669392590B8DE00AB3034 /* AppDelegate.swift in Sources */,
 				DA25716C27B64B9E006EF04D /* JobTableViewCell.swift in Sources */,
 				DA25716827B64705006EF04D /* RealmObject.swift in Sources */,
 				F726693B2590B8DE00AB3034 /* SceneDelegate.swift in Sources */,
+				DA25717227B64F62006EF04D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@ class RealmHelper {
 
 //MARK: - Job CRUD işlemleri
 extension RealmHelper {
-    func createJob(title: String, content: String) -> Bool {
+    func createJob(title: String, content: String) -> Job? {
         let job = Job()
         job.title = title
         job.content = content
@@ -40,16 +40,16 @@ extension RealmHelper {
             debugPrint("========CREATE JOB========")
             debugPrint(job)
             
-            return true
+            return job
         } catch let error {
             debugPrint(error)
-            return false
+            return nil
         }
     }
 
-    func updateJob(jobId: String, title: String, content: String) -> Bool {
+    func updateJob(jobId: String, title: String, content: String) -> Job? {
         guard let job: Job = getSelectJob(id: jobId) else {
-            return false
+            return nil
         }
         
         do {
@@ -64,10 +64,10 @@ extension RealmHelper {
             debugPrint(job)
             
             
-            return true
+            return job
         } catch let error {
             debugPrint(error)
-            return false
+            return nil
         }
     }
 
