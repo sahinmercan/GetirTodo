@@ -9,6 +9,7 @@ import UIKit
 
 protocol DetailViewControllerDelegate: AnyObject {
     func detailAddOrUpdate(job: Job, index: Int?)
+    func detailDelete(index: Int?)
 }
 
 class DetailViewController: UIViewController {
@@ -85,6 +86,11 @@ extension DetailViewController: UITableViewDelegate {
 }
 
 extension DetailViewController: DetailTableViewCellDelegate {
+    func clickedToDelete() {
+        navigationController?.popViewController(animated: true)
+        delegate?.detailDelete(index: index)
+    }
+    
     func clickedToSend(title: String, content: String) {
         if let updateJob = job {
             let realmJob = RealmHelper.sharedInstance.updateJob(jobId: updateJob._id, title: title, content: content)

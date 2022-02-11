@@ -114,6 +114,14 @@ extension MainViewController: UITableViewDelegate {
 }
 
 extension MainViewController: DetailViewControllerDelegate {
+    func detailDelete(index: Int?) {
+        guard let deleteIndex = index else {
+            return
+        }
+        
+        deleteAction(indexPath: IndexPath(row: deleteIndex, section: 0))
+    }
+    
     func detailAddOrUpdate(job: Job, index: Int?) {
         if let updateIndex = index {
             jobs[updateIndex] = job

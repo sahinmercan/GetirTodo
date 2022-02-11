@@ -9,6 +9,7 @@ import UIKit
 
 protocol DetailTableViewCellDelegate: AnyObject {
     func clickedToSend(title: String, content: String)
+    func clickedToDelete()
 }
 
 class DetailTableViewCell: UITableViewCell {
@@ -18,6 +19,7 @@ class DetailTableViewCell: UITableViewCell {
     @IBOutlet weak var labelContent: UILabel!
     @IBOutlet weak var textViewContent: UITextView!
     @IBOutlet weak var buttonSend: UIButton!
+    @IBOutlet weak var buttonDelete: UIButton!
     
     //MARK: Variables
     weak var delegate: DetailTableViewCellDelegate?
@@ -37,18 +39,24 @@ class DetailTableViewCell: UITableViewCell {
         labelContent.text = "Detay"
         let sendText = job != nil ? "Güncelle" : "Ekle"
         buttonSend.setTitle(sendText, for: .normal)
+        buttonDelete.setTitle("Sil", for: .normal)
+        buttonDelete.isHidden = job == nil
         textfieldTitle.text = job?.title ?? ""
         textViewContent.text = job?.content ?? ""
         setupToolBar()
     }
 
-    @IBAction func clickedAccount(_ sender: UIButton) {
+    @IBAction func clickedSend(_ sender: UIButton) {
         let title = textfieldTitle.text ?? ""
         let content = textViewContent.text ?? ""
         
         if !title.isEmpty && !content.isEmpty {
             delegate?.clickedToSend(title: title, content: content)
         }
+    }
+
+    @IBAction func clickedDelete(_ sender: UIButton) {
+        delegate?.clickedToDelete()
     }
 }
 
