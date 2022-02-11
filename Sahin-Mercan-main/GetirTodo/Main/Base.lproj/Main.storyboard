@@ -16,10 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-jm-ens">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="TjC-QM-MQB"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zN3-Ey-C74"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vue-jm-ens" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1oZ-bM-3ag"/>
+                            <constraint firstItem="Vue-jm-ens" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J14-ds-ti9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vue-jm-ens" secondAttribute="bottom" id="UJm-L9-Az3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vue-jm-ens" secondAttribute="trailing" id="iZ5-qH-MV7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q5u-z1-MEu"/>
+                    <connections>
+                        <outlet property="tableViewJobs" destination="Vue-jm-ens" id="YjE-ns-gXa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
